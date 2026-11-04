@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f4ead8" />
+  <title>Filter & Form — A Product Design Ritual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="../index.html" aria-label="Filter and Form home">
+      <span class="brand-mark">f<span>·</span>f</span>
+      <span>FILTER <em>&</em> FORM</span>
+    </a>
+    <div class="top-note"><span class="live-dot"></span> A BREWING GUIDE TO PRODUCT DESIGN</div>
+    <a class="top-link" href="#field-notes">FIELD NOTES <span>↘</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> SOUTH INDIAN FILTER COFFEE × DESIGN THINKING</p>
+        <h1>Good things<br>take <span class="italic-word">filtering.</span></h1>
+        <p class="hero-description">A little patience. A little experimentation. A better cup — and a better product. Follow the ritual of making filter coffee, one design decision at a time.</p>
+        <button class="primary-button" id="startBtn">START THE BREW <span>↗</span></button>
+        <div class="hero-foot"><span>01 / 06</span><span>SCROLL TO STEEP IN</span><span class="tiny-sun">✳</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a South Indian filter coffee tumbler and brass davara">
+        <div class="art-sticker sticker-top">MADE WITH<br>INTENTION ✳</div>
+        <div class="sun-disc"></div>
+        <div class="art-leaf leaf-one">✳</div><div class="art-leaf leaf-two">✳</div>
+        <svg class="coffee-art" viewBox="0 0 430 440" role="img" aria-label="Stylized filter coffee tumbler and saucer">
+          <ellipse cx="218" cy="366" rx="147" ry="29" fill="#b86b3f" opacity=".18"/>
+          <path d="M91 295 Q215 355 342 295 L319 331 Q215 386 113 331Z" fill="#b87a3e" stroke="#613a28" stroke-width="3"/>
+          <ellipse cx="216" cy="294" rx="126" ry="36" fill="#dca66b" stroke="#613a28" stroke-width="3"/>
+          <ellipse cx="216" cy="290" rx="96" ry="24" fill="#5a3023"/>
+          <path d="M143 115 Q216 96 289 115 L274 276 Q216 303 158 276Z" fill="#e8d4ad" stroke="#613a28" stroke-width="4"/>
+          <ellipse cx="216" cy="116" rx="73" ry="19" fill="#f8e9c9" stroke="#613a28" stroke-width="4"/>
+          <ellipse cx="216" cy="119" rx="57" ry="12" fill="#6c3928"/>
+          <path d="M158 144 Q216 164 274 144" fill="none" stroke="#c08a52" stroke-width="4"/>
+          <path d="M160 164 Q216 184 272 164" fill="none" stroke="#c08a52" stroke-width="4"/>
+          <path d="M165 184 Q216 204 267 184" fill="none" stroke="#c08a52" stroke-width="4"/>
+          <path d="M169 204 Q216 221 263 204" fill="none" stroke="#c08a52" stroke-width="4"/>
+          <path d="M174 224 Q216 239 258 224" fill="none" stroke="#c08a52" stroke-width="4"/>
+          <path d="M181 244 Q216 256 251 244" fill="none" stroke="#c08a52" stroke-width="4"/>
+          <path d="M193 102 C184 81 206 74 198 54 M220 99 C236 78 214 70 231 51 M242 103 C257 88 244 77 258 68" fill="none" stroke="#fff4d9" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+          <path d="M102 292 Q216 326 330 292" fill="none" stroke="#f5d9a8" stroke-width="5"/>
+          <circle cx="320" cy="137" r="26" fill="#cf6b4c"/>
+          <path d="M320 118 L320 156 M301 137 L339 137" stroke="#f7e8cc" stroke-width="3"/>
+          <path d="M87 190 Q63 171 70 145 Q93 153 98 177 Q112 152 134 153 Q126 181 98 193" fill="#62734b" stroke="#34432c" stroke-width="2"/>
+          <path d="M98 193 Q107 211 112 225" stroke="#34432c" stroke-width="3" fill="none"/>
+        </svg>
+        <div class="art-sticker sticker-bottom">SLOW BREW.<br>SHARP THINKING.</div>
+        <div class="art-caption">FIG. 01 — THE DAILY RITUAL</div>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <span class="strip-number">THE METHOD</span>
+      <p>From <strong>first sip</strong> to <strong>final prototype</strong>, every good brew starts with a question.</p>
+      <span class="strip-symbol">✳</span>
+    </section>
+
+    <section class="journey" id="journey">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE BREWING PROCESS</p><h2>Six steps. One good idea.</h2></div>
+        <p class="section-aside">Move through the ritual. Collect the thinking tools. Make something worth coming back to.</p>
+      </div>
+      <div class="journey-layout">
+        <nav class="step-nav" aria-label="Coffee and design steps" id="stepNav">
+          <button class="step-link active" data-step="0"><span class="step-index">01</span><span class="step-name">Choose your beans</span><span class="step-icon">✳</span></button>
+          <button class="step-link" data-step="1"><span class="step-index">02</span><span class="step-name">Grind & measure</span><span class="step-icon">⌁</span></button>
+          <button class="step-link" data-step="2"><span class="step-index">03</span><span class="step-name">Pack the filter</span><span class="step-icon">▤</span></button>
+          <button class="step-link" data-step="3"><span class="step-index">04</span><span class="step-name">Let it drip</span><span class="step-icon">↓</span></button>
+          <button class="step-link" data-step="4"><span class="step-index">05</span><span class="step-name">Mix & taste</span><span class="step-icon">↻</span></button>
+          <button class="step-link" data-step="5"><span class="step-index">06</span><span class="step-name">Serve the good stuff</span><span class="step-icon">♡</span></button>
+          <div class="progress-wrap"><div class="progress-label"><span>YOUR BREW</span><span id="progressText">1 OF 6</span></div><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div></div>
+        </nav>
+        <article class="step-card" id="stepCard">
+          <div class="step-card-top"><span class="pill" id="coffeeLabel">COFFEE RITUAL 01</span><span class="step-time" id="stepTime">2 MIN READ</span></div>
+          <div class="step-visual" id="stepVisual">
+            <div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div>
+            <div class="visual-number" id="visualNumber">01</div>
+            <div class="visual-object beans-object" id="visualObject"><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span></div>
+            <span class="visual-label" id="visualLabel">START WITH THE SOURCE</span>
+          </div>
+          <div class="step-content">
+            <p class="eyebrow" id="designEyebrow">DESIGN STEP 01 / DISCOVER</p>
+            <h3 id="stepTitle">Choose your beans.</h3>
+            <p class="step-description" id="stepDescription">Every cup starts with a choice. Traditional filter coffee often blends dark-roasted coffee with chicory for body, aroma, and that unmistakable depth.</p>
+            <div class="metaphor-box"><span class="metaphor-icon">↗</span><div><p class="micro-label">THE PRODUCT DESIGN PARALLEL</p><p id="metaphorText">Start with people, not assumptions. Learn who you're designing for and what they actually need before choosing a direction.</p></div></div>
+            <div class="takeaway"><span class="takeaway-star">✳</span><div><p class="micro-label">YOUR DESIGN TAKEAWAY</p><p id="takeawayText">Write one clear problem statement. Who is it for, and what are they trying to do?</p></div></div>
+            <div class="step-actions"><button class="text-button" id="prevBtn" disabled>← PREVIOUS</button><button class="next-button" id="nextBtn">NEXT STEP <span>→</span></button></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="field-notes" id="field-notes">
+      <div class="notes-header"><p class="eyebrow">POCKET NOTES</p><h2>Keep the good bits.</h2><p>Design is a practice, not a one-time pour. Take these prompts into your next project.</p></div>
+      <div class="notes-grid">
+        <article class="note-card note-cream"><span class="note-number">01 / NOTICE</span><span class="note-doodle">⌕</span><h3>Stay curious.</h3><p>Ask “why?” one more time. The first answer is rarely the whole story.</p><span class="note-bottom">OBSERVE BEFORE YOU SOLVE</span></article>
+        <article class="note-card note-green"><span class="note-number">02 / EXPERIMENT</span><span class="note-doodle">↗</span><h3>Make it tangible.</h3><p>A rough prototype gives people something real to react to — much more useful than a perfect idea in your head.</p><span class="note-bottom">PROGRESS OVER POLISH</span></article>
+        <article class="note-card note-orange"><span class="note-number">03 / REFINE</span><span class="note-doodle">✳</span><h3>Leave room to steep.</h3><p>Good design needs feedback, reflection, and a willingness to change your recipe.</p><span class="note-bottom">ITERATE WITH INTENTION</span></article>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-symbol">ஃ</div>
+      <p class="eyebrow">A SMALL REMINDER</p>
+      <h2>Make with care.<br><span>Serve with purpose.</span></h2>
+      <p>There’s no perfect recipe on the first try. Keep listening, keep testing, keep brewing.</p>
+      <button class="primary-button light-button" id="restartBtn">BREW IT AGAIN <span>↻</span></button>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">f<span>·</span>f</span><span>FILTER <em>&</em> FORM</span></a><span>DESIGNED FOR THE CURIOUS ☕</span><span>© 2026 — TAKE YOUR TIME</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
